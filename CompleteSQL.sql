@@ -64,8 +64,8 @@ GROUP BY
 ORDER BY
     salesratio DESC;
 
--- the results shown 1960 BSA Gold Star is the most favorite
--- and 1995 Honda Civic is the lowest selling among all
+	-- the results shown 1960 BSA Gold Star is the most favorite
+	-- and 1995 Honda Civic is the lowest selling among all
 
 SELECT *
 FROM products
@@ -102,6 +102,7 @@ INNER JOIN products ON products.warehouseCode = warehouses.warehouseCode
 INNER JOIN productLines ON productLines.productLine = products.productLine
 WHERE products.productName = '1985 Toyota Supra';
 
+-- create csv of '1985 Toyota Supra' for python analysis 
 
 -- now we know '1985 Toyota Supra' is kept in warehouseName 'East'
 -- with total quantity 7733 unit unsold, the company total expense purchasing
